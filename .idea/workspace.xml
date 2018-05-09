@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3422b0a5-cdab-4f6b-8bda-4ab09b0c9ac8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Sie1_0/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/plantillas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/plantillas/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/plantillas/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/plantillas/principal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/js/skel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/images/pic01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/images/pic02.jpg" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/iglesia/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Sie1_0/apps/__init__py.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps/usuario/apps.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/apps.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/urls.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/peticion/urls.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/Sie1_0/urls.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/models.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="667" />
+    <option name="height" value="741" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
+              <item name="apps_s" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
+              <item name="apps_s" type="462c0819:PsiDirectoryNode" />
+              <item name="iglesia" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GITS/sieV1.0/SieV1_" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sie1_0/apps_s/actividad" />
+      <recent name="$PROJECT_DIR$/Sie1_0/apps_s/iglesia" />
+      <recent name="$PROJECT_DIR$/Sie1_0/apps_s/peticion" />
+      <recent name="$PROJECT_DIR$/Sie1_0/apps_s/usuario" />
+      <recent name="$PROJECT_DIR$/Sie1_0/apps_s" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sie1_0/apps_s" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3422b0a5-cdab-4f6b-8bda-4ab09b0c9ac8" name="Default" comment="" />
+      <created>1525877011340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525877011340</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" weight="0.2704918" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps/usuario/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps/__init__py.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps/usuario/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/base.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../GITS/sieV1.0/SieV1_/SieV1_/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="65" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/iglesia/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="e#640#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../GITS/sieV1.0/SieV1_/SieV1_/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/principal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="133" column="28" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/iglesia/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/iglesia/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
