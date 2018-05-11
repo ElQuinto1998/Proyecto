@@ -1,5 +1,10 @@
 from django.shortcuts import render
 
 # Create your views here.
-def login(request):
-    return render(request, 'principal.html', {})
+from ..actividad.models import Actividad
+
+
+def home(request):
+    actividad = Actividad.objects.all()
+
+    return render(request, 'principal.html', {'actividades': actividad})
