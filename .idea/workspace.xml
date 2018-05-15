@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3422b0a5-cdab-4f6b-8bda-4ab09b0c9ac8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/plantillas/registroUsuario.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +18,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state>
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -67,13 +57,13 @@
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/registroUsuario.html" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py" />
-        <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/forms.py" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/urls.py" />
-        <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" />
         <option value="$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py" />
-        <option value="$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/admin.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/forms.py" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py" />
       </list>
     </option>
@@ -89,6 +79,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,11 +98,17 @@
               <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
               <item name="apps_s" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
+              <item name="apps_s" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,17 +154,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.22131148" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -181,6 +179,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/principal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
@@ -199,9 +221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -230,9 +249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -275,9 +291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -377,9 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -408,37 +418,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/forms.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -479,26 +464,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="66" lean-forward="true" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+        <state relative-caret-position="225">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
