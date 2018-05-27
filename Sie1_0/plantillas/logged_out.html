@@ -1,7 +1,21 @@
+{% load static %}
 
-{% block title %}Hasta pronto!{% endblock %}
+<link rel="stylesheet" href="{% static 'assets/css/logout.css' %}">
 
-{% block principal %}
-  <p>Usted ha cerrado sesion</p>
-  <p><a href="{% url 'login' %}"> Login </a> de nuevo.</p>
-{% endblock %}
+<body style="background: url('{% static 'images/fondo.jpeg' %}');  background-size: 100%; -moz-background-size: 100%;
+         -o-background-size: 100%;
+            -webkit-background-size: 100%;
+             -khtml-background-size: 100%; ">
+<div class="cuadro">
+
+   <h1>Hasta pronto, Dios te bendiga !</h1>
+  <p>Has cerrado sesion</p>
+
+    <a href="{% url 'login' %}"> <input type="button" name="login" value="Ingresar de nuevo"></a>
+
+</div>
+
+</body>
+
+
+

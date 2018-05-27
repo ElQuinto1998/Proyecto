@@ -1,10 +1,33 @@
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ingresar</title>
+		<link rel="stylesheet" href="{% static 'assets/css/login.css' %}">
+	</head>
+	<body style="background: url('{% static 'images/fondo2.jpeg' %}');  background-size: 100%; -moz-background-size: 100%;
+         -o-background-size: 100%;
+            -webkit-background-size: 100%;
+             -khtml-background-size: 100%; ">
+		<div class="loginBox">
+			<img src="{% static 'images/user.png' %}" class="user">
+			<h2>Ingresar</h2>
 
-{% block title %}Login{% endblock %}
+			<form method="post">
 
-{% block principal %}
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-  </form>
-{% endblock %}
+                 {% csrf_token %}
+				<p>Usuario:</p>
+				<input type="text" name="username" placeholder="Ingrese su nombre de usuario" required>
+				<p>Contraseña:</p>
+				<input type="password" name="password" placeholder="••••••" required>
+				<input type="submit" name="submit" value="Seguir">
+                {% if form.errors %}
+                     <p>Usuario y contraseña no registrados</p>
+                {% endif %}
+
+			</form>
+
+		</div>
+	</body>
+</html>
