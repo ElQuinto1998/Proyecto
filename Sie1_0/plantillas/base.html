@@ -34,8 +34,10 @@
 						{% if user.is_authenticated %}
      						 Hi {{ user.username }}!
 							<a class="btn btn-warning" href="{% url 'logout' %}"> logout </a>
+                            <a class="btn btn-success" href="{% url 'actividad:blog_actividad' %}"> Actividades </a>
 						{% else %}
-      						<a class="btn btn-success" href="{% url 'login' %}">login</a>
+      						<a class="btn btn-success" href="{% url 'login' %}"> login </a>
+
     					{% endif %}
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -95,5 +97,11 @@
   	<script src="{% static 'assets/js/skel.min.js' %}"></script>
   	<script src="{% static 'assets/js/util.js' %}"></script>
   	<script src="{% static 'assets/js/main.js' %}"></script>
+    <!--<script src="{% static 'actividad/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'actividad/assets/js/jquery.scrolly.min.js' %}"></script>
+    <script src="{% static 'actividad/assets/js/jquery.poptrox.min.js' %}"></script>
+    <script src="{% static 'actividad/assets/js/skel.min.js' %}"></script>
+    <script src="{% static 'actividad/assets/js/util.js' %}"></script>
+    <script src="{% static 'actividad/assets/js/main.js' %}"></script>-->
 
 </html>
