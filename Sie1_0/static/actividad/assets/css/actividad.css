@@ -1461,7 +1461,9 @@
     color: black;
 
 }
-
+.modal-body p{
+font-size: 1em;
+}
 .modal-footer {
     padding: 7px 16px;
     background-color: #0a975d ;
@@ -1506,7 +1508,7 @@
     padding: 4px;
     color: white;
     margin: 0.3em;
-    width 
+    font-size:1.4em;
 }
 
 #eliminar{
@@ -1517,4 +1519,5 @@
     padding: 4px;
     color: white;
     margin: 0.3em;
+    font-size: 1.4em;
 }
