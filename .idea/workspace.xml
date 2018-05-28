@@ -2,50 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3422b0a5-cdab-4f6b-8bda-4ab09b0c9ac8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/CREDITS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/actividades.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/font-awesome.min2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/images/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/jquery.poptrox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/jquery.scrolly.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/skel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/images/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/images/banner.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/images/banner.webm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/images/pic01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/images/pic02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/images/pic03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/images/pic04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/images/pic05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/images/pic06.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/plantillas/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/plantillas/principal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/images/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/images/banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/images/pic01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/images/pic01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/images/pic02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/images/pic02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,12 +18,17 @@
       <file leaf-file-name="actividades.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/actividades.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="55" column="68" lean-forward="true" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
-              <folding>
-                <element signature="e#1650#1657#1" expanded="true" />
-                <element signature="e#4751#4757#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="43" column="54" lean-forward="true" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-375">
+              <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -72,8 +36,20 @@
       <file leaf-file-name="actividad.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="1504" column="4" selection-start-line="1504" selection-start-column="4" selection-end-line="1504" selection-end-column="4" />
+            <state relative-caret-position="404">
+              <caret line="1513" column="20" selection-start-line="1513" selection-start-column="20" selection-end-line="1513" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="14" column="236" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="236" />
+              <folding>
+                <element signature="e#3104#3110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="7" column="68" lean-forward="true" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+              <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -91,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -145,8 +121,8 @@
         <option value="$PROJECT_DIR$/Sie1_0/static/assets/css/base.css" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/principal.html" />
         <option value="$PROJECT_DIR$/Sie1_0/static/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/Sie1_0/plantillas/base.html" />
         <option value="$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/modal.js" />
+        <option value="$PROJECT_DIR$/Sie1_0/plantillas/base.html" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" />
         <option value="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css" />
       </list>
@@ -176,6 +152,18 @@
               <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
               <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
+              <item name="plantillas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
+              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -185,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -231,7 +219,6 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.265674" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
@@ -245,6 +232,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -382,13 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -417,15 +398,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/images/arrow.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/images/arrow.svg" />
     <entry file="file://$PROJECT_DIR$/Sie1_0/static/images/banner.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -449,9 +425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -465,30 +438,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="7" column="68" lean-forward="true" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/base.css" />
     <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -496,20 +453,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/principal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -520,21 +467,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="236" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="236" />
+          <folding>
+            <element signature="e#3104#3110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/actividades.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="55" column="68" lean-forward="true" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
-          <folding>
-            <element signature="e#1650#1657#1" expanded="true" />
-            <element signature="e#4751#4757#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="43" column="54" lean-forward="true" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="1504" column="4" selection-start-line="1504" selection-start-column="4" selection-end-line="1504" selection-end-column="4" />
+        <state relative-caret-position="404">
+          <caret line="1513" column="20" selection-start-line="1513" selection-start-column="20" selection-end-line="1513" selection-end-column="20" />
         </state>
       </provider>
     </entry>

@@ -1452,7 +1452,7 @@
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #0a975d ;
     color: white;
 }
 
@@ -1463,8 +1463,8 @@
 }
 
 .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+    padding: 7px 16px;
+    background-color: #0a975d ;
     color: white;
 }
 
@@ -1498,12 +1498,23 @@
 
 }
 
-.accion{
+#editar{
 
-    background-color: #70c7be;
+    background-color: #ff9200;
     border-radius: 4px;
     border: 0;
     padding: 4px;
-    color: black;
+    color: white;
+    margin: 0.3em;
+    width 
+}
 
+#eliminar{
+
+    background-color: #496597;
+    border-radius: 4px;
+    border: 0;
+    padding: 4px;
+    color: white;
+    margin: 0.3em;
 }
