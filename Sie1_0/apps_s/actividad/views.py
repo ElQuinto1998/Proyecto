@@ -10,3 +10,12 @@ def blog_actividad(request):
     actividad = Actividad.objects.all()
 
     return render(request, 'actividades.html', {'actividades': actividad})
+
+
+def editar_actividad(request):
+
+
+
+    print('++++++++++Holii++++++++++');
+
+    return render(request, 'editar_actividad.html')
