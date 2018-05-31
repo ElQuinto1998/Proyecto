@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3422b0a5-cdab-4f6b-8bda-4ab09b0c9ac8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Sie1_0/static/assets/js/modalUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/iglesia/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/peticion/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/plantillas/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/plantillas/principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/static/actividad/actividades.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/static/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/assets/css/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,59 +19,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="actividades.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/actividades.html">
+      <file leaf-file-name="modalUser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/js/modalUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+            <state relative-caret-position="375">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actividad.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21960">
-              <caret line="1464" column="13" selection-start-line="1464" selection-start-column="13" selection-end-line="1464" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="409">
+              <caret line="97" column="44" lean-forward="true" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
               <folding>
-                <element signature="e#24#63#0" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#nav#0;n#div#0;n#header#0;n#header#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="3178" column="13" lean-forward="true" selection-start-line="3178" selection-start-column="13" selection-end-line="3178" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -79,8 +64,13 @@
       <file leaf-file-name="principal.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/principal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="199">
+              <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+              <folding>
+                <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,14 +122,15 @@
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" />
         <option value="$PROJECT_DIR$/Sie1_0/static/assets/css/base.css" />
-        <option value="$PROJECT_DIR$/Sie1_0/plantillas/principal.html" />
-        <option value="$PROJECT_DIR$/Sie1_0/static/assets/css/main.css" />
         <option value="$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/modal.js" />
-        <option value="$PROJECT_DIR$/Sie1_0/plantillas/base.html" />
         <option value="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css" />
         <option value="$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py" />
-        <option value="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" />
+        <option value="$PROJECT_DIR$/Sie1_0/static/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/Sie1_0/plantillas/prueba.html" />
+        <option value="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" />
+        <option value="$PROJECT_DIR$/Sie1_0/plantillas/principal.html" />
+        <option value="$PROJECT_DIR$/Sie1_0/plantillas/base.html" />
       </list>
     </option>
   </component>
@@ -170,6 +161,19 @@
               <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
               <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
+              <item name="apps_s" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
+              <item name="apps_s" type="462c0819:PsiDirectoryNode" />
+              <item name="actividad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
               <item name="plantillas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -181,19 +185,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="logo&#9;FILE&#9;file:///home/andres98/Documentos/Proyect/Proyecto/Sie1_0/static/assets/css/logout.css" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TestSie" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sie1_0/apps_s" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sie1_0/static/assets/js" />
       <recent name="$PROJECT_DIR$/Sie1_0/static/actividad" />
       <recent name="$PROJECT_DIR$/Sie1_0/static/assets" />
       <recent name="$PROJECT_DIR$/Sie1_0/static/assets/css" />
       <recent name="$PROJECT_DIR$/Sie1_0/static/images" />
-      <recent name="$PROJECT_DIR$/Sie1_0/plantillas" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Sie1_0/apps_s" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,22 +257,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps/usuario/apps.py" />
-    <entry file="file://$PROJECT_DIR$/../GITS/sieV1.0/SieV1_/SieV1_/urls.py" />
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -316,13 +305,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env/local/lib/python2.7/site-packages/django/urls/resolvers.py" />
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/peticion/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -331,9 +313,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/signin.css" />
@@ -348,13 +327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/logout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -441,20 +413,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/base.css" />
-    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="2803" column="9" lean-forward="true" selection-start-line="2803" selection-start-column="9" selection-end-line="2803" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -469,10 +427,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/base.html">
+    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+        <state relative-caret-position="-736" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env/lib/python2.7/site-packages/django/contrib/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="233" column="4" selection-start-line="233" selection-start-column="4" selection-end-line="233" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/logout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/static/actividad/actividades.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/prueba.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/static/actividad/assets/js/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/actividades.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/js/modalUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -483,34 +511,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/actividades.html">
+    <entry file="file://$PROJECT_DIR$/Sie1_0/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="343">
+          <caret line="3178" column="13" lean-forward="true" selection-start-line="3178" selection-start-column="13" selection-end-line="3178" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/principal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="199">
+          <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+          <folding>
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
+    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="409">
+          <caret line="97" column="44" lean-forward="true" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+          <folding>
+            <element signature="n#src#0;n#img#0;n#nav#0;n#div#0;n#header#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

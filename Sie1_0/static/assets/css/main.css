@@ -1761,9 +1761,14 @@
 	}
 
 	.inner {
+		margin: 0 auto;
+	}
+
+	.inner1 {
 		max-width: 75em;
 		margin: 0 auto;
 	}
+
 
 		@media screen and (max-width: 1280px) {
 
@@ -2734,11 +2739,26 @@
 			position: absolute;
 			top: 0;
 			font-size: 1em;
+			padding-left: 110px;
 		}
 
 			#header .logo strong {
-				color: #ffffff;
+				color: #fff;
 				font-weight: 600;
+				font-size: 30px;
+			}
+
+			#userName{
+
+			    color: #fff;
+			    font-size: 20px;
+
+			}
+
+			.imgA{
+
+			    height: 200px;
+
 			}
 
 		#header a {
@@ -2751,15 +2771,25 @@
 			color: inherit;
 			text-decoration: none;
 			font-size: 1em;
+			font-size: 25px;
 		}
 
 			#header a:hover {
 				color: #ffffff;
 			}
 
-			#header a:last-child {
-				padding-right: 0;
-			}
+            .menu{
+
+                border-right: 2px solid rgba(255, 255, 255, 0.2);
+
+            }
+
+            .imgP{
+
+                height: 55px;
+                width: 55px;
+
+            }
 
 			#header a.navPanelToggle {
 				display: none;
@@ -2977,7 +3007,7 @@
 			-ms-justify-content: center;
 			justify-content: center;
 			text-align: center;
-			margin: 0 auto 4em auto;
+			margin: 0 auto 0em auto;
 		}
 
 			#banner .flex div {
