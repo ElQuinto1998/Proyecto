@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>Sie - Actividades</title>
+		<title>SIE - Actividades</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{% static 'actividad/assets/css/actividad.css' %}" />
@@ -35,42 +35,16 @@
                                         <div class="inner">
                                             <h3>{{activ.titulo}}</h3>
                                             <p>{{activ.descripcion}}</p>
-                                            <button id="myBtn" >Ver mas</button>
+                                            <a href= "{% url 'actividad:detalles_actividad' activ.id %}" ><button id="myBtn" >Ver mas</button></a>
                                         </div>
                                 </div>
+                               {% endfor %}
 
-                                    <!-- The Modal -->
-                                <div id="myModal" class="modal">
 
-                                  <!-- Modal content -->
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <span class="close">&times;</span>
-                                      <h2>Información de la actividad</h2>
-                                    </div>
-                                    <div class="modal-body">
-                                      <p>Titulo: {{activ.titulo}}</p>
-                                      <p>Descripcion: {{activ.descripcion}} </p>
-                                      <p>Lugar: </p>
-                                      <p>Fecha: {{activ.fecha}}</p>
-                                      <p>Iglesia a cargo: {{activ.iglesia.nombre}}</p>
-                                    </div>
-
-                                      <!--NECESITO PONER URL DE BOTONES-->
-
-                                    <div class="modal-footer">
-                                      <a href="{% url 'actividad:editar_actividad' activ.id %}" id="editar">Editar</a>
-                                      <a href="{% url 'actividad:eliminar_actividad' activ.id %}" id="eliminar">Eliminar</a>
-                                    </div>
-
-                                  </div>
-
-                                </div>
-                            {% endfor %}
 <!--===============================================================================================================-->
 						</div>
+                    </div>
 
-					</div>
 				</div>
 
 			<!-- Footer -->
@@ -79,12 +53,6 @@
 						<h2>Etiam veroeros lorem</h2>
 						<p>Pellentesque eleifend malesuada efficitur. Curabitur volutpat dui mi, ac imperdiet dolor tincidunt nec. Ut erat lectus, dictum sit amet lectus a, aliquet rutrum mauris. Etiam nec lectus hendrerit, consectetur risus viverra, iaculis orci. Phasellus eu nibh ut mi luctus auctor. Donec sit amet dolor in diam feugiat venenatis. </p>
 
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
 						<p class="copyright">&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>. Videos: <a href="http://coverr.co/">Coverr</a>.</p>
 					</div>
 				</footer>
