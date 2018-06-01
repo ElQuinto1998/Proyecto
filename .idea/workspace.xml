@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3422b0a5-cdab-4f6b-8bda-4ab09b0c9ac8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sie1_0/plantillas/detalle_actividad.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/plantillas/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/registro_usuario.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/detalle_actividad.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/plantillas/detalle_actividad.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +34,8 @@
       <file leaf-file-name="detalle_actividad.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/detalle_actividad.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="285">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -117,8 +109,8 @@
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/base.html" />
-        <option value="$PROJECT_DIR$/Sie1_0/plantillas/detalle_actividad.html" />
         <option value="$PROJECT_DIR$/Sie1_0/static/actividad/assets/css/actividad.css" />
+        <option value="$PROJECT_DIR$/Sie1_0/plantillas/detalle_actividad.html" />
       </list>
     </option>
   </component>
@@ -499,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/detalle_actividad.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="285">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
