@@ -28,88 +28,46 @@
 					<!-- Boxes -->
 						<div class="thumbnails">
 <!--===============================================================================================================-->
-							<div class="box">
-								<a class="image fit"><img src="{% static 'images/fondo2.jpeg' %}" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<button id="myBtn" >Ver mas</button>
-								</div>
-							</div>
+                            {% for activ in actividades %}
 
-                            <!-- The Modal -->
-                        <div id="myModal" class="modal">
+                                <div class="box">
+                                        <a class="image fit"><img src="{% static 'images/fondo2.jpeg' %}" alt="" /></a>
+                                        <div class="inner">
+                                            <h3>{{activ.titulo}}</h3>
+                                            <p>{{activ.descripcion}}</p>
+                                            <button id="myBtn" >Ver mas</button>
+                                        </div>
+                                </div>
 
-                          <!-- Modal content -->
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <span class="close">&times;</span>
-                              <h2>Información de la actividad</h2>
-                            </div>
-                            <div class="modal-body">
-                              <p>Titulo: </p>
-                              <p>Descripcion: </p>
-                              <p>Lugar: </p>
-                              <p>Fecha: </p>
-                            </div>
+                                    <!-- The Modal -->
+                                <div id="myModal" class="modal">
 
-							  <!--NECESITO PONER URL DE BOTONES-->
+                                  <!-- Modal content -->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <span class="close">&times;</span>
+                                      <h2>Información de la actividad</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Titulo: {{activ.titulo}}</p>
+                                      <p>Descripcion: {{activ.descripcion}} </p>
+                                      <p>Lugar: </p>
+                                      <p>Fecha: {{activ.fecha}}</p>
+                                      <p>Iglesia a cargo: {{activ.iglesia.nombre}}</p>
+                                    </div>
 
-                            <div class="modal-footer">
-                              <a href="{% url 'actividad:editar_actividad' %}" id="editar">Editar</a>
-                              <a href="" id="eliminar">Eliminar</a>
-                            </div>
-                          </div>
+                                      <!--NECESITO PONER URL DE BOTONES-->
 
-                        </div>
+                                    <div class="modal-footer">
+                                      <a href="{% url 'actividad:editar_actividad' activ.id %}" id="editar">Editar</a>
+                                      <a href="{% url 'actividad:eliminar_actividad' activ.id %}" id="eliminar">Eliminar</a>
+                                    </div>
 
+                                  </div>
+
+                                </div>
+                            {% endfor %}
 <!--===============================================================================================================-->
-
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="{% static 'images/fondo2.jpeg' %}" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="{% static 'images/fondo2.jpeg' %}" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="{% static 'images/fondo2.jpeg' %}" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="{% static 'images/fondo2.jpeg' %}" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="{% static 'images/fondo2.jpeg' %}" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
 						</div>
 
 					</div>
@@ -133,13 +91,9 @@
 
 		<!-- Scripts -->
 			<script src="{% static 'actividad/assets/js/jquery.min.js' %}"></script>
-			<script src="{% static 'actividad/assets/js/jquery.scrolly.min.js' %}"></script>
-			<script src="{% static 'actividad/assets/js/jquery.poptrox.min.js' %}"></script>
-			<script src="{% static 'actividad/assets/js/skel.min.js' %}"></script>
 			<script src="{% static 'actividad/assets/js/util.js' %}"></script>
 			<script src="{% static 'actividad/assets/js/main.js' %}"></script>
             <script src="{% static 'actividad/assets/js/modal.js' %}"></script>
-
 
 	</body>
 </html>

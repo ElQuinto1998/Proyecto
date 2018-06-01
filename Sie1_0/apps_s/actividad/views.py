@@ -12,10 +12,12 @@ def blog_actividad(request):
     return render(request, 'actividades.html', {'actividades': actividad})
 
 
-def editar_actividad(request):
+def editar_actividad(request, id):
+    actividad = Actividad.objects.get(id=id)
 
+    return render(request, 'editar_actividad.html', {'actividad': actividad})
 
+def eliminar_actividad(request, id):
+    actividad = Actividad.objects.get(id=id)
 
-    print('++++++++++Holii++++++++++');
-
-    return render(request, 'editar_actividad.html')
+    return render(request, 'eliminar_actividad.html', {'actividad': actividad})
