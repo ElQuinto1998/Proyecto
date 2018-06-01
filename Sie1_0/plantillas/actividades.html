@@ -31,7 +31,7 @@
                             {% for activ in actividades %}
 
                                 <div class="box">
-                                        <a class="image fit"><img src="{% static 'images/fondo2.jpeg' %}" alt="" /></a>
+                                        <a class="image fit"><img src="{{ activ.imagen }}" alt="none" /></a>
                                         <div class="inner">
                                             <h3>{{activ.titulo}}</h3>
                                             <p>{{activ.descripcion}}</p>

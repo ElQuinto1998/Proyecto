@@ -1418,7 +1418,7 @@
 
      position: absolute;
     left: 50%;
-    top: 20%;
+    top: 30%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     height:50%;
@@ -1453,6 +1453,12 @@
     font-size:1.4em;
 }
 
+#editar:hover{
+
+    background-color: #107F18;
+
+}
+
 #eliminar{
 
     background-color: #496597;
@@ -1462,4 +1468,28 @@
     color: white;
     margin: 0.3em;
     font-size: 1.4em;
+}
+
+#eliminar:hover{
+
+    background-color: #7F1010;
+
+}
+
+#volver{
+
+    background-color: #107F18;
+    border-radius: 4px;
+    border: 0;
+    padding: 4px;
+    color: white;
+    margin: 0.3em;
+    font-size: 1.4em;
+
+}
+
+#volver:hover{
+
+    background-color: #ff9200;
+
 }

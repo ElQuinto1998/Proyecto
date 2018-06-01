@@ -1907,6 +1907,7 @@
 
 			.flex.flex-2 article {
 				width: 50%;
+				margin-bottom: 40px;
 			}
 
 		@media screen and (max-width: 980px) {

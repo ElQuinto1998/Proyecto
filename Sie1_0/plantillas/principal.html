@@ -4,7 +4,7 @@
 
 {% block principal %}
 
-{% load static %}
+{% load static from staticfiles  %}.
 
 		<!-- Banner -->
 			<section id="banner" style="background: url('{% static 'images/f.gif' %}'); background-size: cover;
@@ -53,19 +53,18 @@
 				<div class="inner">
 					<div class="flex flex-2">
 
-                        <h1>Aqui se muestran algunas actividades </h1>
 						{% for actividad in actividades %}
 
 						<article>
 							<div class="image round">
-								<img src="{% static 'images/pic01.jpg' %}" alt="Pic 01" />
+								<img src="{{ actividad.imagen }}" alt="none" />
 							</div>
 							<header>
 								<h3>{{actividad.titulo}}</h3>
 							</header>
 							<p>{{actividad.descripcion}}</p>
 							<footer>
-								<a href="#" class="button">Learn More</a>
+								<a href="{% url 'actividad:detalles_actividad' actividad.id %}" class="button">Ver mas</a>
 							</footer>
 						</article>
 
