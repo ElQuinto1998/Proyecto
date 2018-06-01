@@ -6,6 +6,6 @@ app_name = 'user'
 urlpatterns = [
 
     url(r'^$', views.home, name='home'),
-
+   url(r'^registro/$', views.registro, name='registro'),
 
 ]
