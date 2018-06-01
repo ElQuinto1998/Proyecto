@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'actividad/assets/css/actividad.css' %}" />
+</head>
+<body id="detalleBody">
+
+    <div id="describe">
+        <p>Titulo: {{activ.titulo}}</p>
+        <p>Descripcion: {{activ.descripcion}} </p>
+        <p>Lugar: </p>
+        <p>Fecha: {{activ.fecha}}</p>
+        <p>Iglesia a cargo: {{activ.iglesia.nombre}}</p>
+        <hr>
+        <a href="{% url 'actividad:editar_actividad' activ.id %}" id="editar">Editar</a>
+        <a href="{% url 'actividad:eliminar_actividad' activ.id %}" id="eliminar">Eliminar</a>
+    </div>
+
+</body>
+</html>
