@@ -6,6 +6,7 @@ from django.shortcuts import render, redirect
 
 from ..actividad.models import Actividad
 from ..usuario.models import Usuario
+from  ..iglesia.models import Iglesia
 
 
 def home(request):
@@ -18,21 +19,27 @@ def home(request):
 
 def registro(request):
 
+    iglesias = Iglesia.objects.all()
+
     user = Usuario()
 
     if request.method == 'POST':
 
-        if 'telefono' in request.POST:
-            nombre = request.POST['nombre']
-            correo = request.POST['correo']
-            contrasenia = request.POST['contraseña']
-            user.usuario = User.objects.create_user(nombre, correo, contrasenia)
-            user.usuario.save()
-            user.telefono = request.POST['telefono']
+        nombre = request.POST['nombre']
+        correo = request.POST['correo']
+        contrasenia = request.POST['contraseña']
+        user.usuario = User.objects.create_user(nombre, correo, contrasenia)
+
+        user.usuario.save()
+
+        user.telefono = request.POST['telefono']
 
 
-            user.save()
+        #user.iglesiaa = request.POST.get('iglesia')
+
+
+        user.save()
 
         return redirect('/login/')
 
-    return render(request, 'registroUsuario.html')
+    return render(request, 'registroUsuario.html', {'iglesias': iglesias})

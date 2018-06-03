@@ -36,13 +36,12 @@
 						</label>
 					</p>
 					<p>
-						<label>Iglesia:
-							<input class="formulario__campo" type="radio" value="1" name="formulario__iglesia">1
-							<input class="formulario__campo" type="radio" value="2" name="formulario__iglesia">2
-							<input class="formulario__campo" type="radio" value="3" name="formulario__iglesia">3
-							<input class="formulario__campo" type="radio" value="4" name="formulario__iglesia">4
-							<input class="formulario__campo" type="radio" value="5" name="formulario__iglesia">5
-						</label>
+					<p>Iglesia:</p>
+						<select name="iglesia" required>
+							{% for iglesia in iglesias %}
+								<option name="iglesia" value="{{iglesia}}">{{iglesia}}</option>
+							{% endfor %}
+						</select>
 					</p>
 				</div>
 				<div class="formulario__derecha">
