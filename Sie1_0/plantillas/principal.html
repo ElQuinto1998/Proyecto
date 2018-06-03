@@ -53,22 +53,31 @@
 				<div class="inner">
 					<div class="flex flex-2">
 
-						{% for actividad in actividades %}
+						{% if actividades %}
 
-						<article>
-							<div class="image round">
-								<img src="{{ actividad.imagen }}" alt="none" />
-							</div>
-							<header>
-								<h3>{{actividad.titulo}}</h3>
-							</header>
-							<p>{{actividad.descripcion}}</p>
-							<footer>
-								<a href="{% url 'actividad:detalles_actividad' actividad.id %}" class="button">Ver mas</a>
-							</footer>
-						</article>
+							{% for actividad in actividades %}
 
-						{% endfor %}
+								<article>
+									<div class="image round">
+										<img src="{{ actividad.imagen.url }}" alt="none" />
+									</div>
+									<header>
+										<h3>{{actividad.titulo}}</h3>
+									</header>
+									<p>{{actividad.descripcion}}</p>
+									<footer>
+										<a href="{% url 'actividad:detalles_actividad' actividad.id %}" class="button">Ver mas</a>
+									</footer>
+								</article>
+
+							{% endfor %}
+
+						{% else %}
+
+							<h1>No hay actividades recientes</h1>
+
+						{% endif %}
+
 
 					</div>
 				</div>

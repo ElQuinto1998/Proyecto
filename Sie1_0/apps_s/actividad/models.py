@@ -7,7 +7,7 @@ class Actividad(models.Model):
     descripcion = models.TextField()
     fecha = models.DateTimeField()
     ubicacion = models.CharField(max_length=120, blank=True, null=True)
-    imagen = models.ImageField(upload_to='media/imagenes_actividad')
+    imagen = models.ImageField(upload_to='imagenes_actividad')
     iglesia = models.ForeignKey(Iglesia, on_delete=models.CASCADE)
 
     def __str__(self):

@@ -5,6 +5,6 @@ from ..actividad.models import Actividad
 
 
 def home(request):
-    actividad = Actividad.objects.all()
+    actividad = Actividad.objects.all()[:4]
 
     return render(request, 'principal.html', {'actividades': actividad})

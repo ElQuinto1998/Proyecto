@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'actividad/assets/css/est_form_act.css' %}" />
+</head>
+    <style>
+body {
+    background: url('{% static 'images/casa.jpg' %}');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+    </style>
+    <body >
+        <h3 class="titulo">Formulario de actividades</h3>
+
+        <div id="cuerpo">
+         
+
+
+            <form method="post">
+                {% csrf_token %}
+                <p>
+                    <label for="fname">Nombre de la actividad</label>
+                    <input type="text" id="fname" name="titulo" value="{{actividad.titulo}}" required placeholder=".........">
+                </p>
+                <label for="lname">Descripcion de la actividad</label>
+                <br>
+                <textarea rows="5" cols="92" id="Descripcion" name="descripcion" required >{{actividad.descripcion}}</textarea>
+                <p>
+                    <label for="lname">Fecha de la actidad</label>
+                    <br>
+                    <input type="datetime" name="fecha" value="{{actividad.fecha}}" ><br>
+                </p>
+                <p>
+                    <label for="lname">Localizacion</label>
+                    <input type="text" id="lname" name="ubicacion" value="{{actividad.ubicacion}}" required placeholder="..........">
+                </p>
+                <p>
+                    <label for="lname">Imagen</label>
+                    <br>
+                    <input type="file" id="imagen" name="imagen" value="{{actividad.imagen.url}}" required placeholder="..........">
+                </p>
+                <select name="iglesia" required>
+                  {% for iglesia in iglesias %}
+                    <option value="{{iglesia}}">{{iglesia}}</option>
+                  {% endfor %}
+                </select>
+                
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+    </body>
+</html>
