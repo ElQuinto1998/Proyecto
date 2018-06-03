@@ -1,18 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load static %}
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="{% static 'usuario/assets/form.css' %}"
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400&amp;subset=cyrillic" rel="stylesheet">
+		<title>Formulario registro</title>
+	</head>
+	<body>
+	<header>Header</header>
+	<form class="formularios" method="post" style="background-image: url( {% static 'usuario/images/bg.jpeg' %} )">
+	 {% csrf_token %}
 
-
-{% block principal %}
-
-    {% load static %}
-
-
-<form method="post">
-
-        {% csrf_token %}
-
-        {{ form.as_p }}
-        <button type="submit">Guardar</button>
-
-</form>
-
-
-{% endblock %}
+		<section class="form">
+			<fieldset class="formulario">
+				<legend class="formulario__legend"><img src="{% static 'usuario/images/avatar.png' %}" class="formulario__img">Datos Usuario</legend>
+				<div class="formulario__izquierda">
+					<p class="formulario__usuario">
+						<input class="formulario__campo" type="text" placeholder="Nombre" autocomplete="off"/>
+					</p>
+					<p class="formulario__usuario">
+						<input class="formulario__campo" type="text" placeholder="Apellido" autocomplete="off"/>
+					</p>
+					<p class="formulario__usuario">
+						<input class="formulario__campo" type="tel" placeholder="Teléfono" autocomplete="off"/>
+					</p>
+					<p class="formulario__usuario">
+						<input class="formulario__campo" type="text" placeholder="Dirección" autocomplete="off"/>
+					</p>
+					<p class="formulario__usuario">
+						<label>Fecha de Nacimiento:
+							<input class="formulario__campo" type="date" autocomplete="off"/>
+						</label>
+					</p>
+					<p>
+						<label>Iglesia:
+							<input class="formulario__campo" type="radio" value="1" name="formulario__iglesia">1
+							<input class="formulario__campo" type="radio" value="2" name="formulario__iglesia">2
+							<input class="formulario__campo" type="radio" value="3" name="formulario__iglesia">3
+							<input class="formulario__campo" type="radio" value="4" name="formulario__iglesia">4
+							<input class="formulario__campo" type="radio" value="5" name="formulario__iglesia">5
+						</label>
+					</p>
+				</div>
+				<div class="formulario__derecha">
+					<br>
+					<p class="formulario__usuario">
+						<input class="formulario__campo" type="email" placeholder="Correo" autocomplete="off"/>
+					</p>
+					<p class="formulario__usuario">
+						<input class="formulario__campo" type="password" placeholder="Contraseña" autocomplete="off"/>
+					</p>
+					<p>
+						<input class="formulario__boton" type="submit" value="Aceptar" autocomplete="off"/>
+					</p>
+				</div>
+			</fieldset>
+		</section>
+	</form>
+	<footer>
+		<div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	</footer>
+</body>
+</html>
