@@ -28,19 +28,25 @@
 					<!-- Boxes -->
 						<div class="thumbnails">
 <!--===============================================================================================================-->
-                            {% for activ in actividades %}
+								{% if actividades %}
 
-                                <div class="box">
-                                        <a class="image fit"><img src="{{ activ.imagen.url }}" alt="none" /></a>
-                                        <div class="inner">
-                                            <h3>{{activ.titulo}}</h3>
-                                            <p>{{activ.descripcion}}</p>
-                                            <a href= "{% url 'actividad:detalles_actividad' activ.id %}" ><button id="myBtn" >Ver mas</button></a>
-                                        </div>
-                                </div>
-                               {% endfor %}
+									{% for activ in actividades %}
 
+										<div class="box">
+												<a class="image fit"><img src="{{ activ.imagen.url }}" alt="none" /></a>
+												<div class="inner">
+													<h3>{{activ.titulo}}</h3>
+													<p>{{activ.descripcion}}</p>
+													<a href= "{% url 'actividad:detalles_actividad' activ.id %}" ><button id="myBtn" >Ver mas</button></a>
+												</div>
+										</div>
+									   {% endfor %}
 
+                                {% else %}
+
+							        <h1>No hay actividades recientes</h1>
+
+						        {% endif %}
 <!--===============================================================================================================-->
 						</div>
                     </div>
