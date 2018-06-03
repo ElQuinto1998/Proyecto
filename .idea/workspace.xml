@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3422b0a5-cdab-4f6b-8bda-4ab09b0c9ac8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/actividad/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/migrations/0002_auto_20180603_1745.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/migrations/0003_remove_usuario_correo.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sie1_0/plantillas/registroUsuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sie1_0/plantillas/registroUsuario.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,23 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="registroUsuario.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/registroUsuario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -37,8 +33,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="105">
+              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -49,8 +45,20 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+            <state relative-caret-position="405">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1668">
+              <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -84,7 +92,6 @@
         <option value="$PROJECT_DIR$/login/templates/home.html" />
         <option value="$PROJECT_DIR$/Sie1_0/Sie1_0/urls.py" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/forms.py" />
-        <option value="$PROJECT_DIR$/Sie1_0/plantillas/registroUsuario.html" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/forms.py" />
         <option value="$PROJECT_DIR$/Sie1_0/static/assets/css/signin.css" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/index.html" />
@@ -110,18 +117,19 @@
         <option value="$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/eliminar_actividad.html" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/principal.html" />
-        <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/detalle_actividad.html" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/form_actividad.html" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/actividades.html" />
         <option value="$PROJECT_DIR$/Sie1_0/plantillas/login.html" />
+        <option value="$PROJECT_DIR$/Sie1_0/plantillas/registroUsuario.html" />
+        <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py" />
         <option value="$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
     <option name="y" value="27" />
     <option name="width" value="667" />
@@ -148,21 +156,7 @@
               <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
               <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
-              <item name="apps_s" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
               <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
-              <item name="apps_s" type="462c0819:PsiDirectoryNode" />
-              <item name="actividad" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="Sie1_0" type="462c0819:PsiDirectoryNode" />
-              <item name="apps_s" type="462c0819:PsiDirectoryNode" />
-              <item name="usuario" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -422,13 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/principal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -474,23 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/registroUsuario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -501,17 +471,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/actividad/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/plantillas/registroUsuario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sie1_0/Sie1_0/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1668">
+          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        <state relative-caret-position="405">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sie1_0/apps_s/usuario/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="105">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

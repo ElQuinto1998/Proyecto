@@ -4,13 +4,13 @@ from ..iglesia.models import Iglesia
 
 # Create your models here.
 class Usuario(models.Model):
-    usuario = models.OneToOneField(User, on_delete=models.CASCADE)
-    fecha_nacimiento = models.DateField()
+    usuario = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
+    fecha_nacimiento = models.DateField(null=True)
     telefono = models.CharField(max_length=20)
-    iglesia = models.ForeignKey(Iglesia, on_delete=models.CASCADE)
+    iglesiaa = models.ForeignKey(Iglesia, null=True, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.usuario.username
+        return self.telefono
 
     class Meta:
         verbose_name = "Usuario"
