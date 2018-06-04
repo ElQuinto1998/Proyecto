@@ -1,86 +1,119 @@
 {% extends 'base.html' %}
-
 {% block contenido %}
 {% load static %}
-
-    <!-- peticiones -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
+<!-- peticiones -->
+<section id="about">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Peticiones</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/1.jpg' %}" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/2.jpg' %}" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/3.jpg' %}" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/4.jpg' %}" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4 href="">Escribir
-                    <br>Una Peticion</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+         </div>
       </div>
-    </section>
-
+      <div class="row">
+         <div class="col-lg-12">
+            <ul class="timeline">
+               {% for peticion in peticiones %}
+               {% if peticion.id|divisibleby:"2" %}
+               <li>
+                  {% else %}
+               <li class="timeline-inverted">
+                  {% endif %}
+                  <a href="#portfolioModal{{ forloop.counter }}" data-toggle="modal">
+                     <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="{{peticion.imagen.url}}" alt="ImagenPeticion">
+                     </div>
+                  </a>
+                  <div class="timeline-panel">
+                     <div class="timeline-heading">
+                        <h4>{{ peticion.titulo }}</h4>
+                        <h4 class="subheading">{{ peticion.fecha }}</h4>
+                     </div>
+                     <div class="timeline-body">
+                        <p class="text-muted">{{ peticion.descripcion }}</p>
+                        <p class="text-muted">contador de personas orando</p>
+                     </div>
+                  </div>
+               </li>
+               <!-- Modal  -->
+               <div class="portfolio-modal modal fade" id="portfolioModal{{ forloop.counter }}" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="close-modal" data-dismiss="modal">
+                           <div class="lr">
+                              <div class="rl"></div>
+                           </div>
+                        </div>
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                 <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2 class="text-uppercase">{{peticion.titulo}}</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{actividad.imagen.url}}" alt="">
+                                    <p>Descripcion: {{peticion.descripcion}}</p>
+                                    <ul class="list-inline">
+                                       <li>Fecha: {{peticion.fecha}}</li>
+                                       <li>Persona: {{ peticion.usuario }}</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               {% endfor %}
+               <li class="timeline-inverted">
+                  <div class="timeline-image">
+                     <a href="#modalCreatePeticion" style="color: white;" data-toggle="modal">
+                        <h4 href="">Escribir
+                           <br>Una Peticion
+                        </h4>
+                     </a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Modal Create  -->
+<div class="portfolio-modal modal fade" id="modalCreatePeticion" tabindex="-1" role="dialog" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+               <div class="rl"></div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                     <!-- Project Details Go Here -->
+                     <h2 class="text-uppercase">Crear Petición</h2>
+                      <form>
+                         <label>Titulo: <br>
+                            <input type="text" name="titulo">
+                         </label><br>
+                         <label>Descripción: <br>
+                            <textarea type="textarea" name="descripcion" maxlength="300" style="width: 600px; height: 300px; resize: none; border-radius: 5px; border-width: 1px; border-style: solid; border-color: gray;"></textarea>
+                         </label><br>
+                         <input class="btn btn-primary" type="submit" name="submit">
+                      </form>
+                     <button class="btn btn-primary" data-dismiss="modal" type="button">
+                     <i class="fa fa-times"></i>
+                     Cancelar</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
 {% endblock %}
+
