@@ -1,75 +1,10 @@
-<!DOCTYPE HTML>
-
-
-<html>
-	<head>
-        {% load static %}
-		<title>Blog de Actividades</title>
-		<title>SIE - Actividades</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="{% static 'actividad/assets/css/actividad.css' %}" />
-		<link rel="stylesheet" href="{% static 'assets/bootsrap/css/bootstrap.css' %}">
-	</head>
-	<body id="top">
-
-				<section id="banner" data-video="{% static 'actividad/images/banner' %}">
-					<div class="inner">
-						<header>
-							<h1>BLOG DE ACTIVIDADES</h1>
-							<p>Aqui podrás estar al tanto de las diferentes actividades que se realicen en el distrito.</p>
-						</header>
-						<a href="#main" class="more">Learn More</a>
-					</div>
-				</section>
-
-			<!-- Main -->
-				<div id="main">
-					<div class="inner">
-
-					<!-- Boxes -->
-						<div class="thumbnails">
-<!--===============================================================================================================-->
-								{% if actividades %}
-
-									{% for activ in actividades %}
-
-										<div class="box">
-												<a class="image fit"><img src="{{ activ.imagen.url }}" alt="none" /></a>
-												<div class="inner">
-													<h3>{{activ.titulo}}</h3>
-													<p>{{activ.descripcion}}</p>
-													<a href= "{% url 'actividad:detalles_actividad' activ.id %}" ><button id="myBtn" >Ver mas</button></a>
-												</div>
-										</div>
-									   {% endfor %}
-
-                                {% else %}
-
-							        <h1>No hay actividades recientes</h1>
-
-						        {% endif %}
-<!--===============================================================================================================-->
-						</div>
-                    </div>
-
-				</div>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<h2>Etiam veroeros lorem</h2>
-						<p>Pellentesque eleifend malesuada efficitur. Curabitur volutpat dui mi, ac imperdiet dolor tincidunt nec. Ut erat lectus, dictum sit amet lectus a, aliquet rutrum mauris. Etiam nec lectus hendrerit, consectetur risus viverra, iaculis orci. Phasellus eu nibh ut mi luctus auctor. Donec sit amet dolor in diam feugiat venenatis. </p>
-
-						<p class="copyright">&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>. Videos: <a href="http://coverr.co/">Coverr</a>.</p>
-					</div>
-				</footer>
-
-		<!-- Scripts -->
-			<script src="{% static 'actividad/assets/js/jquery.min.js' %}"></script>
-			<script src="{% static 'actividad/assets/js/util.js' %}"></script>
-			<script src="{% static 'actividad/assets/js/main.js' %}"></script>
-            <script src="{% static 'actividad/assets/js/modal.js' %}"></script>
-
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+$END$
+</body>
 </html>

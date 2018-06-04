@@ -7,7 +7,7 @@ app_name = 'user'
 
 urlpatterns = [
 
-
+    url(r'^iglesias/$', views.iglesia, name='iglesia'),
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
