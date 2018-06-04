@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
 
     <title>{% block title %}SIE - Home{% endblock title %}</title>
 
@@ -254,7 +256,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2018</span>
+            <a href="#">
+              <span class="copyright">Copyright &copy; SIE 2018</span> - <span class="copyright">Ghost in the Shell</span>
+              <img src="{% static 'images/logo.png' %}" alt="LogoSIE" style="width: 10em;">
+              <img src="{% static 'images/Gits1.jpeg' %}" alt="LogoGITS" style="width:10em;">
+            </a>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
