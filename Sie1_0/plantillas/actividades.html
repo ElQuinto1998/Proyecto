@@ -31,7 +31,7 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">{{actividad.titulo}}</h2>
-                  <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/portfolio/01-full.jpg' %}" alt="">
+                  <img class="img-fluid d-block mx-auto" src="{{actividad.imagen.url}}" alt="">
                   <p>Descripcion: {{actividad.descripcion}}</p>
                   <ul class="list-inline">
                     <li>Fecha: {{actividad.fecha}}</li>
@@ -64,9 +64,6 @@
               <a class="btn btn-warning" href="">Detalles...</a>
             </div>
           </div>
-
-
-
 
           {% endfor %}
 
