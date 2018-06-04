@@ -12,9 +12,8 @@ from  ..iglesia.models import Iglesia
 def home(request):
 
     actividad = Actividad.objects.all()[:3]
-    #user = User()
-    #print('***********Es super usuario***********')
-    #print(request.user.is_superuser)
+
+
     return render(request, 'home.html', {'actividades': actividad})
 
 
