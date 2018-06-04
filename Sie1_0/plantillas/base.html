@@ -1,142 +1,514 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
     <meta charset="utf-8">
-    <title>{% block title %}{% endblock title %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
-      <link rel="stylesheet" href="{% static 'assets/css/userProfile.css' %}" />
-	  <link rel="stylesheet" href="{% static 'assets/bootsrap/css/bootstrap.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>{% block title %}SIE - Home{% endblock title %}</title>
 
-      <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <!-- Tema opcional -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-    <!-- JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-	  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!--===============================================================================================-->
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'generico/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'generico/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'generico/css/agency.min.css' %}" rel="stylesheet">
 
   </head>
 
-  <header>
+  <body id="page-top">
 
-      {% block menu %}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Sistema de Informacion Ecleciastico</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'usuario:home' %}">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'iglesia:iglesia' %}">Iglesias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'actividad:blog_actividad' %}">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'peticion:blog_peticion' %}">Peticiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
+            </li>
 
-			<header id="header">
-				<div class="inner1">
-					<a href="" class="logo"><strong>Sistema de Información Eclesiástico</strong></a>
-					<nav id="nav">
-						<a class="menu" href="{% url 'usuario:home' %}">Inicio</a>
-						{% if user.is_authenticated %}
-                        <img id="myBtn" onclick="document.getElementById('modal-wrapper').style.display='block'" class="imgP" src="{% static 'images/avatar.jpg' %}" />
-						<a class="btn btn-warning" href="{% url 'logout' %}"> Salir </a>
+             {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="btn btn-warning" href="{% url 'logout' %}"> logout </a>
+                </li>
+            {% else %}
+              <li class="nav-item">
+                  <a class="btn btn-success" href="{% url 'login' %}">login</a>
+              </li>
+            {% endif %}
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Bienvenido a nuestro sitio web!</div>
+          <div class="intro-heading text-uppercase">Distrito Shalom</div>
+        </div>
+      </div>
+    </header>
 
 
-<!--=================================================================================================================-->
-                        <!-- Aqui va el modal de usuario con la informacion de su perfil -->
-           <div id="modal-wrapper" class="modal">
+    {% block contenido %}
+    {% endblock %}
 
-                <div class="modal-content">
 
-                    <div class="imgcontainer">
-                      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
-                      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDggNTA4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDggNTA4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojOTBERkFBOyIgY3g9IjI1NCIgY3k9IjI1NCIgcj0iMjU0Ii8+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0U2RTlFRTsiIGQ9Ik0yNTUuMiwzNjMuMmMtMC40LDAtMC44LDAuNC0xLjYsMC40Yy0wLjQsMC0wLjgtMC40LTEuNi0wLjRIMjU1LjJ6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRTZFOUVFOyIgZD0iTTQ1OC40LDQwNGMtNDYsNjIuOC0xMjAuOCwxMDQtMjA0LjgsMTA0Uzk1LjIsNDY3LjIsNDguOCw0MDRjMzYtMzguNCw4NC44LTU4LjgsMTI1LjYtNjkuMiAgIGMtMy42LDI5LjIsMTEuNiw2OC40LDEyLDY3LjJjMTUuMi0zNS4yLDY2LjgtMzguNCw2Ni44LTM4LjRzNTEuNiwyLjgsNjcuMiwzOC40YzAuNCwwLjgsMTUuNi0zOCwxMi02Ny4yICAgQzM3My42LDM0NS4yLDQyMi40LDM2NS42LDQ1OC40LDQwNHoiLz4KPC9nPgo8cGF0aCBzdHlsZT0iZmlsbDojRkZEMDVCOyIgZD0iTTMxNi44LDMwOEwzMTYuOCwzMDhjMCw1LjItMy4yLDMyLjgtNjEuNiw1NS4ySDI1MmMtNTguNC0yMi40LTYxLjYtNTAtNjEuNi01NS4ybDAsMCAgYzAuNC0xMC40LDIuOC0yMC44LDcuMi0zMC40YzE2LDE4LDM1LjIsMzAsNTYsMzBjMjAuNCwwLDQwLTExLjYsNTYtMzBDMzE0LDI4Ny4yLDMxNi44LDI5Ny42LDMxNi44LDMwOHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0YxNTQzRjsiIGQ9Ik0yODguNCwzNzIuNEwyNzUuNiwzOThoLTQ0bC0xMi44LTI1LjZjMTcuNi03LjYsMzQuOC04LjgsMzQuOC04LjhTMjcxLjIsMzY0LjgsMjg4LjQsMzcyLjR6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRjcwNTg7IiBkPSJNMjE4LDUwNS42YzExLjYsMS42LDIzLjYsMi40LDM2LDIuNGMxMiwwLDI0LTAuOCwzNi0yLjRsLTE0LTEwNy4yaC00NEwyMTgsNTA1LjZ6Ii8+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0zMTYuOCwzMDcuMmMwLDAsMi44LDMyLTYzLjIsNTYuNGMwLDAsNTEuNiwyLjgsNjcuMiwzOC40QzMyMS4yLDQwMy42LDM1MS4yLDMyNiwzMTYuOCwzMDcuMnoiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTkwLjQsMzA3LjJjLTM0LDE4LjgtNC40LDk2LTMuNiw5NC44YzE1LjItMzUuMiw2Ny4yLTM4LjQsNjcuMi0zOC40ICAgQzE4Ny42LDMzOS4yLDE5MC40LDMwNy4yLDE5MC40LDMwNy4yeiIvPgo8L2c+CjxwYXRoIHN0eWxlPSJmaWxsOiNGOUI1NEM7IiBkPSJNMzEyLjgsMjg1LjZjLTE2LjgsMTgtMzYuOCwyOS42LTU5LjIsMjkuNnMtNDIuNC0xMS42LTU5LjItMjkuNmMwLjgtMi44LDItNS42LDMuMi04ICBjMTYsMTgsMzUuMiwzMCw1NiwzMHM0MC0xMS42LDU2LTMwQzMxMC44LDI4MCwzMTIsMjgyLjgsMzEyLjgsMjg1LjZ6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRkQwNUI7IiBkPSJNMzYyLjgsMjI0LjRjLTguNCwxNC0yMS4yLDIyLjQtMzAuOCwyMC44Yy0xOS4yLDM1LjYtNDcuMiw2Mi03OC40LDYycy01OS4yLTI2LjgtNzguNC02MiAgYy05LjYsMS4yLTIyLjQtNi44LTMwLjgtMjAuOGMtMTAtMTYuNC0xMC40LTM0LjQtMC44LTQwLjRjMi40LTEuMiw0LjgtMiw3LjYtMS42YzYuNCwxNi40LDE1LjIsMjYuNCwxNS4yLDI2LjQgIGMtOS4yLTUwLjgsMjguNC01Ni40LDIyLTEwNS4yYzAsMCwyMy42LDUyLjQsOTEuMiwxNS42bC01LjIsMTBjOTQuNC0yMS4yLDYyLjgsOTAsNjIsOTIuOGMxMC44LTEzLjYsMTcuNi0yNy4yLDIxLjYtMzkuNiAgYzEuNiwwLDMuNiwwLjgsNC44LDEuNkMzNzMuMiwxODkuNiwzNzIuOCwyMDgsMzYyLjgsMjI0LjR6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMzMjRBNUU7IiBkPSJNMzA4LDUwLjhjNy42LTAuOCwyMCw2LDIwLDZjLTM0LTM4LjgtODkuNi0xNC04OS42LTE0YzE4LjgtMTYsMzUuNi0xNC40LDM1LjYtMTQuNCAgYy03OS42LTEyLTkzLjIsMzUuNi05My4yLDM1LjZjLTMuNi01LjYtMy42LTEzLjYtMy4yLTE3LjZDMTcyLDU2LDE3OCw3NS4yLDE3OCw3NS4yYy01LjYtMTQtMjUuMi0xMS42LTI1LjItMTEuNiAgYzE2LjgsMi44LDE5LjYsMTMuMiwxOS42LDEzLjJjLTQyLDE1LjYtMzQuOCw1OS4yLTM0LjgsNTkuMmwxMC0xMmMtMTIuNCw0Ny42LDE5LjIsODQuNCwxOS4yLDg0LjRjLTkuMi01MC44LDI4LjQtNTYuNCwyMi0xMDUuMiAgYzAsMCwyMy42LDUyLjQsOTEuMiwxNS42bC01LjIsMTBjOTUuNi0yMS42LDYyLDkzLjIsNjIsOTMuMmMzNC00My4yLDI4LjgtODcuNiwyOC44LTg3LjZsNCwxNkMzODAuNCw3OC40LDMwOCw1MC44LDMwOCw1MC44eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" alt="Avatar" class="avatar">
-                      <h1 style="text-align:center">Modal Popup Box</h1>
-                    </div>
 
-                    <div class="container">
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Nuestros Lideres</h2>
+            <h3 class="section-subheading text-muted">Estas son algunas de las personas que nos representan a nivel general</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'generico/img/team/1.jpg' %}" alt="">
+              <h4>Ezequiel Rueda</h4>
+              <p class="text-muted">Presidente de la Union Colombiana del Sur</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'generico/img/team/2.jpg' %}" alt="">
+              <h4>Larry Parker</h4>
+              <p class="text-muted">Presidente de la Asociacion del Pacifico</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'generico/img/team/3.jpg' %}" alt="">
+              <h4>Diana Pertersen</h4>
+              <p class="text-muted">Pastor del Distrito</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                        <h1>Hola soy un usuario</h1>
+    <!-- Clients -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/logos/envato.jpg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/logos/designmodo.jpg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/logos/themeforest.jpg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/logos/creative-market.jpg' %}" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    </div>
-
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contactanos</h2>
+            <h3 class="section-subheading text-muted">Escribenos y con gusto te atenderemos</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Escriba su nombre *" required="required" data-validation-required-message="Por favor ingrese su nombre.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Escriba su correo *" required="required" data-validation-required-message="Por favor ingrese su correo.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Escriba su numero celular *" required="required" data-validation-required-message="Por favor ingrese su numero.">
+                    <p class="help-block text-danger"></p>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Escriba su mensaje *" required="required" data-validation-required-message="Por favor escriba un mensaje."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-           </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Your Website 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-<!--=================================================================================================================-->
-						{% else %}
-      						<a class="btn btn-success" href="{% url 'login' %}"> login </a>
+    <!-- Portfolio Modals -->
 
-    					{% endif %}
-					</nav>
-				</div>
-			</header>
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/portfolio/01-full.jpg' %}" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Threads</li>
+                    <li>Category: Illustration</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	  {% endblock %}
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/portfolio/02-full.jpg' %}" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Explore</li>
+                    <li>Category: Graphic Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  </header>
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/portfolio/03-full.jpg' %}" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/portfolio/04-full.jpg' %}" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Lines</li>
+                    <li>Category: Branding</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/portfolio/05-full.jpg' %}" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Southwest</li>
+                    <li>Category: Website Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    {% block principal %}{% endblock %}
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-fluid d-block mx-auto" src="{% static 'generico/img/portfolio/06-full.jpg' %}" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Window</li>
+                    <li>Category: Photography</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'generico/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'generico/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'generico/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
 
-   	{% block footer %}
+    <!-- Contact form JavaScript -->
+    <script src="{% static 'generico/js/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'generico/js/contact_me.js' %}"></script>
 
-	  <!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'generico/js/agency.min.js' %}"></script>
 
-					<h3>CONTÁCTANOS</h3>
-
-					<form action="#" method="post">
-
-						<div class="field half first">
-							<label for="name">Nombre</label>
-							<input name="name" id="name" type="text" placeholder="Por favor escriba su nombre">
-						</div>
-						<div class="field half">
-							<label for="email">Correo</label>
-							<input name="email" id="email" type="email" placeholder="Por favor escriba su correo" required>
-						</div>
-						<div class="field">
-							<label for="message">Mensaje</label>
-							<textarea name="message" id="message" rows="6" placeholder="Escriba un mensaje" required></textarea>
-						</div>
-						<ul class="actions">
-							<li><input value="Enviar mensaje" class="button alt" type="submit"></li>
-						</ul>
-					</form>
-
-					<div class="copyright">
-						<!--&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.-->
-                        &copy; GITS (Ghost In The Shell)
-					</div>
-
-				</div>
-			</footer>
-
-	{% endblock %}
-
-
-<!--===============================================================================================-->
-	<script src="{% static 'assets/js/jquery.min.js' %}"></script>
-  	<script src="{% static 'assets/js/skel.min.js' %}"></script>
-  	<script src="{% static 'assets/js/util.js' %}"></script>
-  	<script src="{% static 'assets/js/main.js' %}"></script>
-
-    <script>
-
-
-
-</script>
-
-
-
-    </script>
-    <!--<script src="{% static 'actividad/assets/js/jquery.min.js' %}"></script>
-    <script src="{% static 'actividad/assets/js/jquery.scrolly.min.js' %}"></script>
-    <script src="{% static 'actividad/assets/js/jquery.poptrox.min.js' %}"></script>
-    <script src="{% static 'actividad/assets/js/skel.min.js' %}"></script>
-    <script src="{% static 'actividad/assets/js/util.js' %}"></script>
-    <script src="{% static 'actividad/assets/js/main.js' %}"></script>-->
+  </body>
 
 </html>

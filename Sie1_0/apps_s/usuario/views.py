@@ -11,10 +11,10 @@ from  ..iglesia.models import Iglesia
 
 def home(request):
 
-    actividad = Actividad.objects.all()[:4]
+    actividad = Actividad.objects.all()[:3]
 
 
-    return render(request, 'principal.html', {'actividades': actividad})
+    return render(request, 'home.html', {'actividades': actividad})
 
 
 def registro(request):

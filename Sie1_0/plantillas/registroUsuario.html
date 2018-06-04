@@ -19,16 +19,16 @@
 				<legend class="formulario__legend"><img src="{% static 'usuario/images/avatar.png' %}" class="formulario__img">Datos Usuario</legend>
 				<div class="formulario__izquierda">
 					<p class="formulario__usuario">
-						<input class="formulario__campo" type="text" name="nombre" placeholder="Nombre" autocomplete="off"/>
+						<input class="formulario__campo" type="text" name="nombre" placeholder="Nombre" autocomplete="off" required />
 					</p>
 					<p class="formulario__usuario">
-						<input class="formulario__campo" type="text" name="apellidos" placeholder="Apellido" autocomplete="off"/>
+						<input class="formulario__campo" type="text" name="apellidos" placeholder="Apellido" autocomplete="off" required/>
 					</p>
 					<p class="formulario__usuario">
-						<input class="formulario__campo" type="tel" name="telefono" placeholder="Teléfono" autocomplete="off"/>
+						<input class="formulario__campo" type="tel" name="telefono" placeholder="Teléfono" autocomplete="off" required/>
 					</p>
 					<p class="formulario__usuario">
-						<input class="formulario__campo" type="text" name="direccion" placeholder="Dirección" autocomplete="off"/>
+						<input class="formulario__campo" type="text" name="direccion" placeholder="Dirección" autocomplete="off" required />
 					</p>
 					<p class="formulario__usuario">
 						<label>Fecha de Nacimiento:
@@ -47,10 +47,10 @@
 				<div class="formulario__derecha">
 					<br>
 					<p class="formulario__usuario">
-						<input class="formulario__campo" type="email" name="correo" placeholder="Correo" autocomplete="off"/>
+						<input class="formulario__campo" type="email" name="correo" placeholder="Correo" autocomplete="off" required />
 					</p>
 					<p class="formulario__usuario">
-						<input class="formulario__campo" type="password" name="contraseña" placeholder="Contraseña" autocomplete="off"/>
+						<input class="formulario__campo" type="password" name="contraseña" placeholder="Contraseña" autocomplete="off" required />
 					</p>
 					<p>
 						<input class="formulario__boton" type="submit" value="Aceptar" autocomplete="off"/>
