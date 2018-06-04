@@ -1,167 +1,157 @@
 {% extends 'base.html' %}
-
 {% block contenido %}
 {% load static %}
-
- <!-- iglesias -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
+<!-- iglesias -->
+<section id="services">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Iglesias</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
+         </div>
+      </div>
+      <div class="row text-center">
+         <div class="col-md-4">
             <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">E-Commerce</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
+         </div>
+         <div class="col-md-4">
             <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Responsive Design</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
+         </div>
+         <div class="col-md-4">
             <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Web Security</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-        </div>
+         </div>
       </div>
-    </section>
-
-    <!-- actividades -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
+   </div>
+</section>
+<!-- actividades -->
+<section class="bg-light" id="portfolio">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Actividades</h2>
-          </div>
-        </div>
-        <div class="row">
-
-          {% for actividad in actividades %}
-
-                 <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ forloop.counter }}" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">{{actividad.titulo}}</h2>
-                  <hr>
-                  <img class="img-fluid d-block mx-auto" src="{{actividad.imagen.url}}" alt="">
-                  <p>Descripcion: {{actividad.descripcion}}</p>
-                  <ul class="list-inline">
-                    <li>Fecha: {{actividad.fecha}}</li>
-                    <li>Lugar: {{actividad.ubicacion}}</li>
-                    <li>Iglesia encargada: {{actividad.iglesia.nombre}}</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="row">
+         {% for actividad in actividades %}
+         <!-- Modal 1 -->
+         <div class="portfolio-modal modal fade" id="portfolioModal{{ forloop.counter }}" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="close-modal" data-dismiss="modal">
+                     <div class="lr">
+                        <div class="rl"></div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                           <div class="modal-body">
+                              <!-- Project Details Go Here -->
+                              <h2 class="text-uppercase">{{actividad.titulo}}</h2>
+                              <hr>
+                              <img class="img-fluid d-block mx-auto" src="{{actividad.imagen.url}}" alt="">
+                              <p>Descripcion: {{actividad.descripcion}}</p>
+                              <ul class="list-inline">
+                                 <li>Fecha: {{actividad.fecha}}</li>
+                                 <li>Lugar: {{actividad.ubicacion}}</li>
+                                 <li>Iglesia encargada: {{actividad.iglesia.nombre}}</li>
+                              </ul>
+                              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fa fa-times"></i>
+                              Close Project</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ forloop.counter }}">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="{{actividad.imagen.url}}" alt="">
+               <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                     <i class="fa fa-plus fa-3x"></i>
+                  </div>
+               </div>
+               <img class="img-fluid" src="{{actividad.imagen.url}}" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>{{ actividad.titulo }}</h4>
-              <a class="btn btn-warning" href="">Detalles...</a>
+               <h4>{{ actividad.titulo }}</h4>
+               <a class="btn btn-warning" href="">Detalles...</a>
             </div>
-          </div>
-
-          {% endfor %}
-
-            <a id="verMas" class="btn btn-success" href="{% url 'actividad:blog_actividad' %}">Ver mas actividades</a>
-
-        </div>
+         </div>
+         {% endfor %}
+         <a id="verMas" class="btn btn-success" href="{% url 'actividad:blog_actividad' %}">Ver mas actividades</a>
       </div>
-    </section>
-
-    <!-- peticiones -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
+   </div>
+</section>
+<!-- peticiones -->
+<section id="about">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Peticiones</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/1.jpg' %}" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/2.jpg' %}" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted" >
-                <div class="timeline-image" >
-                  <a href="{% url 'peticion:blog_peticion' %}" style="color:white;">
-                    <h4>Ver mas
-                      <br>Peticiones</h4>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+         </div>
       </div>
-    </section>
-
+      <div class="row">
+         <div class="col-lg-12">
+            <ul class="timeline">
+               <li>
+                  <div class="timeline-image">
+                     <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/1.jpg' %}" alt="">
+                  </div>
+                  <div class="timeline-panel">
+                     <div class="timeline-heading">
+                        <h4>2009-2011</h4>
+                        <h4 class="subheading">Our Humble Beginnings</h4>
+                     </div>
+                     <div class="timeline-body">
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="timeline-inverted">
+                  <div class="timeline-image">
+                     <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/2.jpg' %}" alt="">
+                  </div>
+                  <div class="timeline-panel">
+                     <div class="timeline-heading">
+                        <h4>March 2011</h4>
+                        <h4 class="subheading">An Agency is Born</h4>
+                     </div>
+                     <div class="timeline-body">
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="timeline-inverted" >
+                  <div class="timeline-image" >
+                     <a href="{% url 'peticion:blog_peticion' %}" style="color:white;">
+                        <h4>Ver mas
+                           <br>Peticiones
+                        </h4>
+                     </a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
 {% endblock %}
