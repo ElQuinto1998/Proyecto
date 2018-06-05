@@ -13,12 +13,12 @@ def blog_peticion(request):
 
     peticion = Peticion()
 
+
     if request.method == 'POST':
+
 
         peticion.titulo = request.POST['titulo']
         peticion.descripcion = request.POST['descripcion']
-        peticion.usuario = Usuario.objects.get(id=request.user.id)
-        peticion.usuario.save()
 
         peticion.save()
 

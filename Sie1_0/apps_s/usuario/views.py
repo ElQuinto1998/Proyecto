@@ -10,6 +10,7 @@ from  ..iglesia.models import Iglesia
 from ..peticion.models import Peticion
 
 
+
 def home(request):
 
     actividad = Actividad.objects.all().order_by('-fecha')[:3]
@@ -24,6 +25,8 @@ def registro(request):
     iglesias = Iglesia.objects.all()
 
     user = Usuario()
+
+
 
     if request.method == 'POST':
 
