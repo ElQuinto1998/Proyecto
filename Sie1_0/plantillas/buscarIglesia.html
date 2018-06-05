@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+{% load static %}
+
+
+<form method="post" id="formIglesia">
+    {% csrf_token %}
+    <h2 id="descripcion">Buscar Iglesia: </h2>
+    <input type="text" name="iglesia" placeholder="Ingrese el nombre de la iglesia">
+    <a href="{% url 'iglesia:buscar' %}"><input type="submit" value="Buscar"></a>
+</form>
+
+{% endblock %}

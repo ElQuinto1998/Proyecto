@@ -9,6 +9,7 @@ urlpatterns = [
 
     url(r'^iglesias/$', views.iglesia, name='iglesia'),
     url(r'^iglesias/(?P<id_iglesia>\d+)/$', views.detalle, name='detalles'),
+    url(r'^iglesia/$', views.buscar, name='buscar'),
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
