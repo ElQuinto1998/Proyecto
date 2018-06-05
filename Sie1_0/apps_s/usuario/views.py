@@ -7,14 +7,16 @@ from django.shortcuts import render, redirect
 from ..actividad.models import Actividad
 from ..usuario.models import Usuario
 from  ..iglesia.models import Iglesia
+from ..peticion.models import Peticion
 
 
 def home(request):
 
-    actividad = Actividad.objects.all()[:3]
+    actividad = Actividad.objects.all().order_by('-fecha')[:3]
+    iglesias = Iglesia.objects.all()[:3]
+    peticiones = Peticion.objects.all().order_by('-fecha')[:3]
 
-
-    return render(request, 'home.html', {'actividades': actividad})
+    return render(request, 'home.html', {'actividades': actividad, 'iglesias': iglesias, 'peticiones': peticiones})
 
 
 def registro(request):

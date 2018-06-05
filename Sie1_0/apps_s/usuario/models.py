@@ -9,7 +9,7 @@ class Usuario(models.Model):
     iglesiaa = models.ForeignKey(Iglesia, null=True, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.usuario.username
+        return self.telefono
     class Meta:
         verbose_name = "Usuario"
         verbose_name_plural = "Usuarios"

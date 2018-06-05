@@ -4,8 +4,8 @@ from django.db import models
 
 class Iglesia(models.Model):
     nombre = models.CharField(max_length=120, blank=True, null=True)
-    direccion = models.CharField(max_length=100, default="")
-    imagen = models.ImageField(upload_to='imagenes_iglesia', default="")
+    direccion = models.CharField(max_length=100)
+    imagen = models.ImageField(upload_to='imagenes_iglesia')
 
 
     def __str__(self):

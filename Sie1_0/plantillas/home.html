@@ -9,34 +9,27 @@
       <div class="row">
          <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Iglesias</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">Estas son algunas de nuestras iglesias</h3>
          </div>
       </div>
       <div class="row text-center">
+
+         {% for iglesia in iglesias %}
+
          <div class="col-md-4">
             <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            <img id="imgIglesia" src="{{iglesia.imagen.url}}" alt="">
             </span>
-            <h4 class="service-heading">E-Commerce</h4>
+            <h4 class="service-heading">{{iglesia.nombre}}</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
          </div>
-         <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-         </div>
-         <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-         </div>
+         {% endfor %}
+          <hr>
+          <a href="{% url 'iglesia:iglesia' %}" style="color:black;">
+              <h4>Ver mas Iglesias</h4>
+          </a>
+
+
       </div>
    </div>
 </section>
@@ -46,6 +39,7 @@
       <div class="row">
          <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Actividades</h2>
+             <h3 class="section-subheading text-muted">Nuestras actividades mas recientes</h3>
          </div>
       </div>
       <div class="row">
@@ -75,7 +69,7 @@
                               </ul>
                               <button class="btn btn-primary" data-dismiss="modal" type="button">
                               <i class="fa fa-times"></i>
-                              Close Project</button>
+                              Cancelar</button>
                            </div>
                         </div>
                      </div>
@@ -108,43 +102,38 @@
       <div class="row">
          <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Peticiones</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">Pedid y se os dará, conoce las peticiones de nuestros miembros</h3>
          </div>
       </div>
       <div class="row">
          <div class="col-lg-12">
             <ul class="timeline">
+               {% for peticion in peticiones %}
+               {% if peticion.id|divisibleby:"2" %}
                <li>
-                  <div class="timeline-image">
-                     <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/1.jpg' %}" alt="">
-                  </div>
+                  {% else %}
+               <li class="timeline-inverted">
+                  {% endif %}
+                  <a href="" data-toggle="modal">
+                     <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="{% static 'images/orar.jpg' %}" alt="ImagenPeticion" style="height: 100%;">
+                     </div>
+                  </a>
                   <div class="timeline-panel">
                      <div class="timeline-heading">
-                        <h4>2009-2011</h4>
-                        <h4 class="subheading">Our Humble Beginnings</h4>
+                        <h4>{{ peticion.titulo }}</h4>
+                        <h4 class="subheading">{{ peticion.fecha }}</h4>
                      </div>
                      <div class="timeline-body">
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        <p class="text-muted">{{ peticion.descripcion }}</p>
+                        <p class="text-muted">contador de personas orando</p>
                      </div>
                   </div>
                </li>
+               {% endfor %}
                <li class="timeline-inverted">
                   <div class="timeline-image">
-                     <img class="rounded-circle img-fluid" src="{% static 'generico/img/about/2.jpg' %}" alt="">
-                  </div>
-                  <div class="timeline-panel">
-                     <div class="timeline-heading">
-                        <h4>March 2011</h4>
-                        <h4 class="subheading">An Agency is Born</h4>
-                     </div>
-                     <div class="timeline-body">
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                     </div>
-                  </div>
-               </li>
-               <li class="timeline-inverted" >
-                  <div class="timeline-image" >
-                     <a href="{% url 'peticion:blog_peticion' %}" style="color:white;">
+                     <a href="{% url 'peticion:blog_peticion' %}" style="color: white;">
                         <h4>Ver mas
                            <br>Peticiones
                         </h4>

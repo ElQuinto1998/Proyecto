@@ -7,7 +7,7 @@
       <div class="row">
          <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Peticiones</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">Pedid y se os dará, conoce las peticiones de nuestros miembros</h3>
          </div>
       </div>
       <div class="row">
@@ -21,7 +21,7 @@
                   {% endif %}
                   <a href="#portfolioModal{{ forloop.counter }}" data-toggle="modal">
                      <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="{{peticion.imagen.url}}" alt="ImagenPeticion">
+                        <img class="rounded-circle img-fluid" src="{% static 'images/orar.jpg' %}" alt="ImagenPeticion" style="height: 100%;">
                      </div>
                   </a>
                   <div class="timeline-panel">
@@ -50,7 +50,7 @@
                                  <div class="modal-body">
                                     <!-- Project Details Go Here -->
                                     <h2 class="text-uppercase">{{peticion.titulo}}</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{actividad.imagen.url}}" alt="">
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'images/orar.jpg' %}" alt="">
                                     <p>Descripcion: {{peticion.descripcion}}</p>
                                     <ul class="list-inline">
                                        <li>Fecha: {{peticion.fecha}}</li>
@@ -58,7 +58,7 @@
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fa fa-times"></i>
-                                    Close Project</button>
+                                    Cancelar</button>
                                  </div>
                               </div>
                            </div>
@@ -97,7 +97,8 @@
                      <!-- Project Details Go Here -->
                      <h2 class="text-uppercase">Crear Petición</h2>
                      <hr>
-                      <form>
+                      <form method="post">
+                          {% csrf_token %}
                          <label>Titulo: <br>
                             <input type="text" name="titulo">
                          </label><br>
