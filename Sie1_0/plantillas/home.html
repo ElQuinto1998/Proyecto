@@ -17,16 +17,19 @@
          {% for iglesia in iglesias %}
 
          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <span>
             <img id="imgIglesia" src="{{iglesia.imagen.url}}" alt="">
             </span>
             <h4 class="service-heading">{{iglesia.nombre}}</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
          </div>
          {% endfor %}
           <hr>
+
+         {% if user.is_authenticated %}
+
           <a id="verIglesias" class="btn btn-success" href="{% url 'iglesia:iglesia' %}">Ver mas Iglesias</a>
 
+         {% endif %}
 
       </div>
    </div>
@@ -86,11 +89,16 @@
             </a>
             <div class="portfolio-caption">
                <h4>{{ actividad.titulo }}</h4>
-               <a class="btn btn-warning" href="">Detalles...</a>
             </div>
          </div>
          {% endfor %}
-         <a id="verMasAc" class="btn btn-success" href="{% url 'actividad:blog_actividad' %}">Ver mas actividades</a>
+
+          {% if user.is_authenticated %}
+
+            <a id="verMasAc" class="btn btn-success" href="{% url 'actividad:blog_actividad' %}">Ver mas actividades</a>
+
+          {% endif %}
+
       </div>
    </div>
 </section>
@@ -129,15 +137,21 @@
                   </div>
                </li>
                {% endfor %}
-               <li class="timeline-inverted">
-                  <div class="timeline-image">
-                     <a href="{% url 'peticion:blog_peticion' %}" style="color: white;">
-                        <h4>Ver mas
-                           <br>Peticiones
-                        </h4>
-                     </a>
-                  </div>
-               </li>
+
+                {% if user.is_authenticated %}
+
+                   <li class="timeline-inverted">
+                      <div class="timeline-image">
+                         <a href="{% url 'peticion:blog_peticion' %}" style="color: white;">
+                            <h4>Ver mas
+                               <br>Peticiones
+                            </h4>
+                         </a>
+                      </div>
+                   </li>
+
+                {% endif %}
+
             </ul>
          </div>
       </div>

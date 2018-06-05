@@ -12,23 +12,47 @@
             <h3 class="section-subheading text-muted">Estas son algunas de nuestras iglesias</h3>
           </div>
         </div>
-        <div class="row text-center">
 
-          {% for iglesia in iglesias %}
+          <div class="row col-md-12">
 
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img id="imgIglesia" src="{{iglesia.imagen.url}}" alt="">
-            </span>
-            <h4 class="service-heading">{{iglesia.nombre}}</h4>
-            <p class="text-muted">HLorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
+                <div id="igles" class="row text-left col-md-6">
 
-          {% endfor %}
+                  {% for iglesia in iglesias %}
 
-        </div>
-      </div>
+                  <div class="col-md-6" style = "padding-bottom: 50px; ">
+                    <span>
+                     <a href="{% url 'iglesia:detalles' iglesia.id %}"><img id="imgIglesia" src="{{iglesia.imagen.url}}" alt=""></a>
+                    </span>
+                    <h4 id="nombreIgl" class="service-heading">{{iglesia.nombre}}</h4>
+                  </div>
+
+                  {% endfor %}
+
+                </div>
+
+                 <div class="text-right col-md-6">
+
+                     <p>Presione una Iglesia para ver su informacion</p>
+
+                  <h1 class="text-center" id="descripcion" value="{{igle.nombre}}">{{igle.nombre}}</h1>
+
+                </div>
+
+           </div>
+
+         </div>
     </section>
+
+<script>
+
+document.body.onload = res();
+    function res(){
+        let desc = document.getElementById('descripcion');
+        console.log(desc);
+        desc.onchange = scrollTo(0,900);
+    }
+
+</script>
 
 
 {% endblock  %}

@@ -43,6 +43,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="{% url 'usuario:home' %}">Inicio</a>
             </li>
+
+            {% if user.is_authenticated %}
+
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="{% url 'iglesia:iglesia' %}">Iglesias</a>
             </li>
@@ -52,6 +55,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="{% url 'peticion:blog_peticion' %}">Peticiones</a>
             </li>
+
+            {% endif %}
+
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
             </li>
