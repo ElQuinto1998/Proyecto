@@ -25,9 +25,7 @@
          </div>
          {% endfor %}
           <hr>
-          <a href="{% url 'iglesia:iglesia' %}" style="color:black;">
-              <h4>Ver mas Iglesias</h4>
-          </a>
+          <a id="verIglesias" class="btn btn-success" href="{% url 'iglesia:iglesia' %}">Ver mas Iglesias</a>
 
 
       </div>
@@ -92,7 +90,7 @@
             </div>
          </div>
          {% endfor %}
-         <a id="verMas" class="btn btn-success" href="{% url 'actividad:blog_actividad' %}">Ver mas actividades</a>
+         <a id="verMasAc" class="btn btn-success" href="{% url 'actividad:blog_actividad' %}">Ver mas actividades</a>
       </div>
    </div>
 </section>
