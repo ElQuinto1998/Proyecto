@@ -9,12 +9,11 @@
 		<title>Formulario registro</title>
 	</head>
 	<body>
-	<header>Header</header>
-	<form class="formularios" method="post" style="background-image: url( {% static 'usuario/images/bg.jpeg' %} )">
+	<form class="formularios" method="post">
 
 		{% csrf_token %}
 
-		<section class="form">
+		<section>
 			<fieldset class="formulario">
 				<legend class="formulario__legend"><img src="{% static 'usuario/images/avatar.png' %}" class="formulario__img">Datos Usuario</legend>
 				<div class="formulario__izquierda">
@@ -59,7 +58,7 @@
 			</fieldset>
 		</section>
 	</form>
-	<footer>
+	<footer style="background-color: gray">
 		<div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 	</footer>
 </body>

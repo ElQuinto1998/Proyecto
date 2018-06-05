@@ -33,10 +33,7 @@ def registro(request):
         user.usuario.save()
 
         user.telefono = request.POST['telefono']
-
-
-        #user.iglesiaa = request.POST.get('iglesia')
-
+        user.iglesiaa = request.POST.getlist('iglesias')
 
         user.save()
 

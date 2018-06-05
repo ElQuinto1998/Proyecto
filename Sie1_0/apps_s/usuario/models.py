@@ -10,9 +10,13 @@ class Usuario(models.Model):
     iglesiaa = models.ForeignKey(Iglesia, null=True, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.telefono
+        return "%s \\ %s \\ %s \\ %s" % (
+            self.usuario, self.fecha_nacimiento, 
+            self.telefono, self.iglesiaa
+        )
 
     class Meta:
         verbose_name = "Usuario"
         verbose_name_plural = "Usuarios"
+
 
