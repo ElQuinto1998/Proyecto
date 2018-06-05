@@ -86,3 +86,18 @@ h2
 	font-weight: bold;
 	text-decoration: none;
 }
+.button-register{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+	background: #F9D913;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.button-register:hover{
+	background: #78DB10;
+	color: #262626;
+	transform: scale(1.2)
+}
