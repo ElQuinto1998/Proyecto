@@ -38,7 +38,7 @@
 					<p>Iglesia:</p>
 						<select name="iglesia" required>
 							{% for iglesia in iglesias %}
-								<option name="iglesia" value="{{iglesia}}">{{iglesia}}</option>
+								<option name="{{iglesia.id}}" value="{{iglesia.id}}">{{iglesia}}</option>
 							{% endfor %}
 						</select>
 					</p>
