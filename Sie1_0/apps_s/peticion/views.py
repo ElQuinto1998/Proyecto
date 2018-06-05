@@ -17,7 +17,7 @@ def blog_peticion(request):
 
         peticion.titulo = request.POST['titulo']
         peticion.descripcion = request.POST['descripcion']
-        peticion.usuario = Usuario.objects.get(id=Usuario.usuario.id)
+        peticion.usuario = Usuario.objects.get(id=request.user.id)
         peticion.usuario.save()
 
         peticion.save()
